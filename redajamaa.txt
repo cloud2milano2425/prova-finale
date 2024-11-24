@@ -1,0 +1,6 @@
+Ho installato e configurato Nginx come server web principale.
+Ho configurato il server MySQL, che è essenziale per gestire il database di wordpress
+Ho installato PHP 8.x per fornire il supporto lato server necessario a WordPress
+Ho scaricato l'ultima versione di WordPress dal sito ufficiale.Dopo aver scaricato WordPress,
+Ho estratto i file e li ho posizionati nella directory della root dei documenti configurata in Nginx.
+Ho verificato che tutti i servizi (Nginx, PHP e MySQL) fossero attivi e configurati correttamente
