@@ -1,0 +1,37 @@
+#Per configurare al meglio uno stack FEMP (FreeBSD, Nginx, MySQL, PHP) abbiamo utilizzato la macchina carbon-server,
+#creata in precedenza con FreeBSD., ci siamo collegati da Terminale tramite SSH, aggiornando poi il catalogo dei repository (sudo pkg update) della macchina.
+#
+#Come primo passo abbiamo installato nginx con, facendo poi in modo che si inizializzi all’avvio: 
+#sudo pkg install nginx
+#sudo sysrc nginx_enable=yes
+#Bisogna poi avviare il servizio e controllarne lo stato:
+#sudo service nginx start
+#sudo service nginx status
+#l’output deve essere “nginx is running ad pid nnnn”
+#
+#Si procede poi con l’installazione di MySQL; per prima cosa bisogna controllare le versioni disponibili:
+#sudo pkg search MySQL
+#
+#Dopo aver trovato la versione server aggiornata si procede al download:
+#sudo pkg install mysql84-server (noi avevamo la versione 84)
+#
+#Come anche per nginx abilitiamo il servizio all’avvio, poi lo inizializziamo e ne controlliamo lo status:
+#sudo sysrc mysql_enable=yes
+#sudo service nginx start
+#sudo service nginx status
+#Se funziona correttamente restituisce “mysql is running as pid nnnn”
+#
+#Per finire procedere scaricando lo script di installazione sicura con:
+#sudo mysql_secure_installation
+#e seguire i passaggi obbligatori abilitando le impostazione sicure con “y” e impostando una password sicura con “2”
+#
+#Infine per applicare le modifiche mandare il comando:
+#sudo service mysql-server restart
+
+
+
+
+
+
+
+
